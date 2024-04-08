@@ -1,16 +1,13 @@
 <script>
-  export default {
-    
-  }
+export default {};
 </script>
 
 <template>
-  <div>
-
-  </div>
+  <div class="container"></div>
 </template>
 
-
 <style lang="scss" scoped>
-
+.container {
+  height: 1000px;
+}
 </style>

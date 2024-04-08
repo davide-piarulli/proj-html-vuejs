@@ -22,6 +22,10 @@ export const store = reactive({
       title: "Testimonials",
       url: "/testimonials",
     },
+    // {
+    //   title: '<i class="fa-solid fa-user"></i>',
+    //   url: "/profile",
+    // },
   ],
 
   contactInfo: [
