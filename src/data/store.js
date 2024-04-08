@@ -4,23 +4,23 @@ export const store = reactive({
   headerNav: [
     {
       title: "Home",
-      url: "#",
+      url: "/home",
     },
     {
       title: "About",
-      url: "#",
+      url: "/about",
     },
     {
       title: "Services",
-      url: "#",
+      url: "/services",
     },
     {
       title: "Process",
-      url: "#",
+      url: "/process",
     },
     {
       title: "Testimonials",
-      url: "#",
+      url: "/testimonials",
     },
   ],
 
