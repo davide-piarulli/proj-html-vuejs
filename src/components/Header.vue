@@ -24,6 +24,7 @@ export default {};
               <span>+1 (305) 1234-5678</span>
             </div>
             <div class="email d-flex px-4">
+              <i class="fa-solid fa-envelope"></i>
               <span>hello@example.com</span>
             </div>
             <div class="social-icons">
