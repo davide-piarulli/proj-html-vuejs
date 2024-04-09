@@ -1,1 +1,21 @@
-// @use './variables' as *;
+@use './variables' as *;
+
+header{
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  color: white;
+}
+
+img{
+  width: 100%;
+}
+
+footer{
+  background-color: #121117;
+  color: #bcbdbd;
+  height: 300px;
+}

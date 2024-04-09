@@ -10,6 +10,7 @@ export default {
 </script>
 
 <template>
+  <!-- TODO: allinea al centro -->
   <nav class="h-100">
     <ul
       class="h-100 d-flex list-unstyled align-items-center justify-content-end"
@@ -33,4 +34,8 @@ export default {
 a {
   color: white;
 }
+button {
+    background-color: #038384;
+    color: white;
+  }
 </style>

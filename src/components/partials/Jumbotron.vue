@@ -39,11 +39,13 @@ export default {};
   }
   img {
     opacity: 50%;
+    width: 100%;
+    height: 100vh;
   }
   .jumbo-info {
     position: absolute;
     width: 25%;
-    top: 100px;
+    top: 40%;
     span {
       color: #52bbbb;
       font-size: 0.9rem;

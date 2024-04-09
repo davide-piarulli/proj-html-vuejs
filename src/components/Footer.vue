@@ -4,7 +4,7 @@ export default {};
 
 <template>
   <footer>
-    <div class="container">
+    <div class="container-xl">
       <div class="row w-100">
         <div class="col">
           <div class="card bg-transparent">
@@ -56,13 +56,11 @@ export default {};
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/scss/partials/_general.scss";
 footer {
-  background-color: #121117;
-  color: #bcbdbd;
-  height: 300px;
   .card {
     color: #bcbdbd;
-    img{
+    img {
       max-width: 150px;
     }
   }

@@ -17,7 +17,7 @@ export default {
   <header>
     <!-- topbar -->
     <div class="contact-info">
-      <div class="container">
+      <div class="container-xl">
         <div class="row">
           <!-- LEFT COLUMN -->
           <div class="col-6 d-flex p-2">
@@ -54,13 +54,14 @@ export default {
     </div>
     <!-- topbar -->
 
-    <div class="container">
+    <div class="container-xl">
       <div class="row h-100 align-items-center justify-content-center py-2">
         <div class="col-4 h-100">
-          <div class="logo">
-            <img src="../assets/img/logo-nexgen.svg" alt="" />
+          <div>
+            <img src="../assets/img/logo-nexgen.svg" alt="logo" class="logo" />
           </div>
         </div>
+
         <div class="col-8 h-100 align-items-center">
           <NavbarVue />
         </div>
@@ -70,21 +71,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/scss/partials/_general.scss";
 header {
-  // position: fixed;
-  background-color: black;
-  color: white;
   .contact-info {
     background-color: #21333e;
     color: #bcbdbd;
   }
-  
-  img {
+  .logo {
     width: 150px;
-  }
-  button {
-    background-color: #038384;
-    color: white;
   }
 }
 </style>
