@@ -1,6 +1,10 @@
 <script>
 import { store } from "../data/store";
+import NavbarVue from "./partials/Navbar.vue";
 export default {
+  components: {
+    NavbarVue,
+  },
   data() {
     return {
       store,
@@ -11,6 +15,7 @@ export default {
 
 <template>
   <header>
+    <!-- topbar -->
     <div class="contact-info">
       <div class="container">
         <div class="row">
@@ -47,6 +52,7 @@ export default {
         </div>
       </div>
     </div>
+    <!-- topbar -->
 
     <div class="container">
       <div class="row h-100 align-items-center justify-content-center py-2">
@@ -55,24 +61,8 @@ export default {
             <img src="../assets/img/logo-nexgen.svg" alt="" />
           </div>
         </div>
-        <div class="col-8 h-100 align-items-center ">
-          <nav class="h-100">
-            <ul
-              class="h-100 d-flex list-unstyled align-items-center justify-content-end"
-            >
-              <li v-for="(element, index) in store.headerNav" :key="index">
-                <a :href="element.url" class="text-decoration-none px-3">{{
-                  element.title
-                }}</a>
-              </li>
-              <li class="h-100 align-items-center justify-content-center px-4">
-                <i class="fa-regular fa-user"></i>
-              </li>
-              <li class="h-100 align-items-center justify-content-center px-4">
-                <button class="btn rounded-1">GET IN TOUCH</button>
-              </li>
-            </ul>
-          </nav>
+        <div class="col-8 h-100 align-items-center">
+          <NavbarVue />
         </div>
       </div>
     </div>
@@ -81,15 +71,14 @@ export default {
 
 <style lang="scss" scoped>
 header {
+  // position: fixed;
   background-color: black;
   color: white;
   .contact-info {
     background-color: #21333e;
     color: #bcbdbd;
   }
-  a {
-    color: white;
-  }
+  
   img {
     width: 150px;
   }
