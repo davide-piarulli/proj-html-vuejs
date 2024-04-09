@@ -1,10 +1,19 @@
 <script>
 import { store } from "../../data/store.js";
+import FooterCard from "./FooterCard.vue";
 export default {
   data() {
     return {
       store,
     };
+  },
+  components: {
+    FooterCard,
+  },
+  props: {
+    address: String,
+    phone: String,
+    email: String,
   },
 };
 </script>
@@ -38,6 +47,18 @@ export default {
         >
       </div>
     </div>
+  </div>
+  
+  
+  <div class="col-3">
+    <FooterCard 
+    :title="store.footerNav.title" />
+  </div>
+  <div class="col-3">
+    <FooterCard />
+  </div>
+  <div class="col-3">
+    <FooterCard />
   </div>
 </template>
 

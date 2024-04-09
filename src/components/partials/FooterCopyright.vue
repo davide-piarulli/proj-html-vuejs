@@ -10,11 +10,11 @@ export default {
 </script>
 
 <template>
-  <div class="col-6">
-    <span>Enjoy the low price. We are tracking any itention of piracy</span>
+  <div class="col align-items-center">
+    <p>Enjoy the low price. We are tracking any itention of piracy</p>
   </div>
-  <div class="col-6 justify-content-end d-flex">
-    <span>@2024 NEXGEN is Proudly Powered by <a href="#">Codings</a></span>
+  <div class="col d-flex align-items-center justify-content-end">
+    <p>@2024 NEXGEN is Proudly Powered by <a href="#">Codings</a></p>
   </div>
 </template>
 
