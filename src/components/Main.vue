@@ -1,16 +1,20 @@
 <script>
-export default {};
+import { store } from "../data/store";
+import Jumbotron from "./partials/Jumbotron.vue";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+  components: {
+    Jumbotron,
+  },
+};
 </script>
 
 <template>
-  <!-- JUMBOTRON -->
-  <section id="jumbotron">
-    <img src="../assets/img/bg-9.jpg" alt="background image" />
-    <div class="container">
-      <p>CARGO TRANSPORT</p>
-    </div>
-  </section>
-  <!-- JUMBOTRON -->
+  <Jumbotron />
 </template>
 
 <style lang="scss" scoped>
