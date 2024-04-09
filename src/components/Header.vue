@@ -55,7 +55,7 @@ export default {
             <img src="../assets/img/logo-nexgen.svg" alt="" />
           </div>
         </div>
-        <div class="col-8 h-100">
+        <div class="col-8 h-100 align-items-center ">
           <nav class="h-100">
             <ul
               class="h-100 d-flex list-unstyled align-items-center justify-content-end"
