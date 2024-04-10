@@ -104,9 +104,6 @@ export default {};
     .description {
       width: 80%;
       color: #c0c3d0;
-      button {
-        width: 115px;
-      }
     }
   }
   .row.bottom {

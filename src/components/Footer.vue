@@ -3,11 +3,13 @@ import FooterCopyright from "./partials/FooterCopyright.vue";
 import FooterInfo from "./partials/FooterInfo.vue";
 import FooterCard from "./partials/FooterCard.vue";
 import { store } from "../data/store";
+import FooterNav from "./partials/FooterNav.vue";
 export default {
   components: {
     FooterInfo,
     FooterCopyright,
     FooterCard,
+    FooterNav,
   },
   data() {
     return {
@@ -21,11 +23,12 @@ export default {
   <footer>
     <div class="container-xl">
       <div class="row w-100">
-        <FooterInfo
-          :phone="store.contactInfo.phone"
-          :email="store.contactInfo.email"
-          :address="store.contactInfo.address"
-        />
+        <div class="col-3">
+          <FooterInfo />
+        </div>
+        <div class="col-9">
+          <FooterNav />
+        </div>
       </div>
       <div class="row d-flex w-100" id="copyright">
         <FooterCopyright />

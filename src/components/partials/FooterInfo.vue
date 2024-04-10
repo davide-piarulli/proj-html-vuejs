@@ -1,6 +1,7 @@
 <script>
 import { store } from "../../data/store.js";
 import FooterCard from "./FooterCard.vue";
+
 export default {
   data() {
     return {
@@ -42,24 +43,11 @@ export default {
           <i class="fa-solid fa-location-pin"></i>
           <span>Main Avenue, 987</span>
         </div>
-        <a href="#" class="btn btn-primary border-success bg-transparent"
-          >GET IN TOUCH</a
-        >
+        <a href="#" class="btn btn-primary border-success bg-transparent">GET IN TOUCH</a>
       </div>
     </div>
   </div>
   
-  
-  <div class="col-3">
-    <FooterCard 
-    :title="store.footerNav.title" />
-  </div>
-  <div class="col-3">
-    <FooterCard />
-  </div>
-  <div class="col-3">
-    <FooterCard />
-  </div>
 </template>
 
 <style lang="scss" scoped>
