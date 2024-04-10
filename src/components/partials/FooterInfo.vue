@@ -1,6 +1,5 @@
 <script>
 import { store } from "../../data/store.js";
-import FooterCard from "./FooterCard.vue";
 
 export default {
   data() {
@@ -8,9 +7,7 @@ export default {
       store,
     };
   },
-  components: {
-    FooterCard,
-  },
+
   props: {
     address: String,
     phone: String,
@@ -20,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <div class="col">
+  <div class="col ">
     <div class="card bg-transparent">
       <img
         src="../../assets/img/logo-nexgen.svg"
@@ -43,14 +40,16 @@ export default {
           <i class="fa-solid fa-location-pin"></i>
           <span>Main Avenue, 987</span>
         </div>
-        <a href="#" class="btn btn-primary border-success bg-transparent">GET IN TOUCH</a>
+        <a href="#" class="btn btn-primary border-success bg-transparent"
+          >GET IN TOUCH</a
+        >
       </div>
     </div>
   </div>
-  
 </template>
 
 <style lang="scss" scoped>
+
 .card {
   color: #bcbdbd;
   img {

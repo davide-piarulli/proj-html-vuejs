@@ -3,8 +3,8 @@ export default {};
 </script>
 
 <template>
-  <section id="services">
-    <div class="container-xl">
+  <section id="services" class="container-fluid">
+    <div class="container-xl h-100">
       <div class="row top">
         <div class="col">
           <span class="section-title">ROAD TRANSPORT</span>
@@ -77,8 +77,11 @@ export default {};
 <style lang="scss" scoped>
 #services {
   background-color: #111117;
-  height: 100vh;
   color: white;
+  height: 100%;
+  .container-xl {
+    padding-bottom: 160px;
+  }
   .row.top {
     padding: 135px 0;
     .section-title {

@@ -58,7 +58,6 @@ export const store = reactive({
   footerNav: [
     {
       title: "About",
-      url: "#",
       submenu: [
         {
           title: "The Company",
@@ -88,7 +87,6 @@ export const store = reactive({
     },
     {
       title: "Transport",
-      url: "#",
       submenu: [
         {
           title: "Industrialized",
@@ -118,7 +116,6 @@ export const store = reactive({
     },
     {
       title: "Support",
-      url: "#",
       submenu: [
         {
           title: "Responsibility",

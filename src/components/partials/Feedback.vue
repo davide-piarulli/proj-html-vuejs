@@ -116,7 +116,8 @@ export default {};
       img {
         // TODO: colore bianco logo
         width: 50%;
-        color: white;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(210deg)
+          brightness(109%) contrast(101%);
       }
       p {
         color: #c0c3d0;

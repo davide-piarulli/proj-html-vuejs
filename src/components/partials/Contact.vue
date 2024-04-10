@@ -6,12 +6,12 @@ export default {};
   <section id="contact">
     <div class="container-xl">
       <div class="row main">
-        <div class="col-8">
+        <div class="col-7">
           <span class="section-title">SEND A MESSAGE</span>
           <div class="title">
             <h2>
-              <span>Get in</span>
-              Touch
+              Get in
+              <span>Touch</span>
             </h2>
           </div>
           <div class="body">
@@ -62,12 +62,12 @@ export default {};
               </div>
 
               <div class="col-12">
-                <button class="btn btn-success" type="submit">SEND</button>
+                <button class="btn" type="submit">SEND</button>
               </div>
             </form>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-5">
           <div class="corporation">
             <h4>Example Inc.</h4>
             <div class="corporation-body">
@@ -120,6 +120,17 @@ export default {};
         }
       }
     }
+    .body {
+      .btn {
+        background-color: #058283;
+        color: white;
+        padding: 5px 20px;
+      }
+      .form-control,
+      .form-select {
+        background-color: #ececec;
+      }
+    }
     .corporation {
       padding: 15px 0 15px;
       .corporation-body {
@@ -128,6 +139,9 @@ export default {};
           background-color: #daeced;
           padding: 15px;
           border-radius: 50%;
+        }
+        span {
+          color: #198ea0;
         }
         button {
           padding: 5px 10px;

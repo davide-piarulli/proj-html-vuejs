@@ -1,14 +1,12 @@
 <script>
 import FooterCopyright from "./partials/FooterCopyright.vue";
 import FooterInfo from "./partials/FooterInfo.vue";
-import FooterCard from "./partials/FooterCard.vue";
 import { store } from "../data/store";
 import FooterNav from "./partials/FooterNav.vue";
 export default {
   components: {
     FooterInfo,
     FooterCopyright,
-    FooterCard,
     FooterNav,
   },
   data() {
@@ -27,19 +25,18 @@ export default {
           <FooterInfo />
         </div>
         <div class="col-9">
-          <FooterNav />
+          <FooterNav :navItem="store.footerNav" />
         </div>
       </div>
-      <div class="row d-flex w-100" id="copyright">
-        <FooterCopyright />
-      </div>
+      <div class="row d-flex w-100" id="copyright"></div>
     </div>
+    <FooterCopyright />
   </footer>
 </template>
 
 <style lang="scss" scoped>
 @use "../assets/scss/partials/_general.scss";
-#copyright {
-  background-color: #0d0d11;
+footer {
+  width: 100%;
 }
 </style>
