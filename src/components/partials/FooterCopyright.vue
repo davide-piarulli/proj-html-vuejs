@@ -10,15 +10,17 @@ export default {
 </script>
 
 <template>
-  <div class="row" id="copyright">
-    <div class="col align-items-center">
-      <p>Enjoy the low price. We are tracking any itention of piracy</p>
-    </div>
-    <div class="col d-flex align-items-center justify-content-end">
-      <p>@2024 NEXGEN is Proudly Powered by <a href="#">Codings</a></p>
-    </div>
-    <div class="arrow">
-      <i class="fa-solid fa-arrow-up"></i>
+  <div class="container-fluid">
+    <div class="row justify-content-between" id="copyright">
+      <div class="col">
+        <p>Enjoy the low price. We are tracking any itention of piracy</p>
+      </div>
+      <div class="col d-flex align-items-center ">
+        <p>@2024 NEXGEN is Proudly Powered by <a href="#">Codings</a></p>
+      </div>
+      <div class="arrow">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
     </div>
   </div>
 </template>
@@ -29,5 +31,12 @@ export default {
 }
 .row {
   position: relative;
+  i{
+    position: absolute;
+    background-color: #29292d;
+    padding: 5px;
+    bottom: 0;
+    right: 10px;
+  }
 }
 </style>
