@@ -1,9 +1,11 @@
 <script>
 import { store } from "../data/store";
-import NavbarVue from "./partials/Navbar.vue";
+import Navbar from "./partials/Navbar.vue";
+import Topbar from "./partials/Topbar.vue";
 export default {
   components: {
-    NavbarVue,
+    Topbar,
+    Navbar,
   },
   data() {
     return {
@@ -19,36 +21,7 @@ export default {
     <div class="contact-info">
       <div class="container-xl">
         <div class="row">
-          <!-- LEFT COLUMN -->
-          <div class="col-6 d-flex p-2">
-            <i class="fa-solid fa-clock"></i>
-            <p>Open Hours: Mon - Sat - 9:00 - 18:00</p>
-          </div>
-          <!-- /LEFT COLUMN -->
-
-          <!-- RIGHT COLUMN -->
-          <div
-            class="col-6 d-flex justify-content-end align-content-center p-2"
-          >
-            <div class="phone d-flex px-4">
-              <i class="fa-solid fa-phone"></i>
-              <span>+1 (305) 1234-5678</span>
-            </div>
-            <div class="email d-flex px-4">
-              <i class="fa-solid fa-envelope"></i>
-              <span>hello@example.com</span>
-            </div>
-            <div class="social-icons">
-              <i
-                v-for="(element, index) in store.socialIcons"
-                :key="index"
-                class="px-3"
-              >
-                <a :href="element.url" v-html="element.name"></a
-              ></i>
-            </div>
-          </div>
-          <!-- /RIGHT COLUMN -->
+          <Topbar />
         </div>
       </div>
     </div>
@@ -63,7 +36,7 @@ export default {
         </div>
 
         <div class="col-8 h-100 align-items-center">
-          <NavbarVue />
+          <Navbar />
         </div>
       </div>
     </div>
