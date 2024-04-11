@@ -11,14 +11,16 @@ export default {};
           <div class="title">
             <h2>Main <span>Services</span></h2>
           </div>
-          <div class="description d-flex">
-            <p>
-              With all of this expertise and capability comes an unrivalled
-              commitment to customer service. We will work hard to understand
-              your needs in order to develop a productive, long-term
-              partnership.
-            </p>
-            <button>SEE ALL</button>
+          <div class="content">
+            <div class="description d-flex">
+              <p>
+                With all of this expertise and capability comes an unrivalled
+                commitment to customer service. We will work hard to understand
+                your needs in order to develop a productive, long-term
+                partnership.
+              </p>
+              <button>SEE ALL</button>
+            </div>
           </div>
         </div>
       </div>
@@ -83,7 +85,7 @@ export default {};
     padding-bottom: 160px;
   }
   .row.top {
-    padding: 135px 0;
+    padding: 135px 0 50px;
     .section-title {
       color: #058283;
       font-weight: 500;
@@ -105,6 +107,10 @@ export default {};
       color: #c0c3d0;
       button {
         width: 115px;
+        height: 40px;
+        border: 1px solid #067475;
+        color: white;
+        border-radius: 5px;
       }
     }
   }
